@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import {NewComponent} from './new-component'
+import HidePassword from "./hide-password";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+        {/*<NewComponent>Hello, i'm Jessy</NewComponent>*/}
+        <HidePassword>password</HidePassword>
     </div>
   );
 }
