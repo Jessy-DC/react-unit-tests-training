@@ -8,6 +8,12 @@ test('renders learn react link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
+test('new test', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
 test('renders new component', () => {
   const messageToTest = `Hello, i'm Jessy`
   render(<NewComponent>{messageToTest}</NewComponent>);
